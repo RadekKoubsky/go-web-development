@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>functions</title>
+</head>
+<body>
+
+{{.}}
+
+{{/* Pipelining in templates works similar to unix pipelines */}}
+{{. | fdbl}}
+
+{{. | fdbl | fsq}}
+
+{{. | fdbl | fsq | fsqrt}}
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+<body>
+
+{{/* To assign data to a variable, use $var_name syntax and short declaration operator ":="
+     Then we can access that variable in template
+*/}}
+{{$wisdom := .}}
+<h1>The meaning of life: {{$wisdom}}</h1>
+</body>
+</html>
