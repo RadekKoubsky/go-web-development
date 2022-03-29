@@ -13,6 +13,12 @@ func (carHandler CarHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	// var initializes carHandler to its zero value, thus we can pass carHandler variable to ListenAndServe and
+	// do not get null pointer
+	// or we can use new function to initialize the variable:
+	// var carHandler = new(CarHandler)
+	// or
+	// carHandler := new(CarHandler)
 	var carHandler CarHandler
 	http.ListenAndServe(":8080", carHandler)
 }

@@ -24,6 +24,8 @@ func init() {
 }
 
 func main() {
+	// var initializes carHandler to its zero value, thus we can pass carHandler variable to ListenAndServe and
+	// do not get null pointer
 	var carHandler CarHandler
 	http.ListenAndServe(":8080", carHandler)
 }
